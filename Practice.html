@@ -1,0 +1,99 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            // Reverse a number
+            
+            function a(text){
+                let b = ''
+                for(i=text.length-1;i>=0;i--){
+                    b += text[i]
+                }
+                return b 
+            }
+            console.log(a("Yogesh"))
+
+        let re = ((text)=>{
+            let d = ''
+            for(i=text.length-1;i>=0;i--){
+                d += text[i]
+            }
+            return d
+        })
+        console.log(re("RAGHAV"))
+
+        function a(str){
+            let arr = str.split(' ')
+            let arr1 = []
+            for(let i=0;i<arr.length;i++){
+                arr1.push(arr[i].charAt(0).toUpperCase()+arr[i].slice(1))
+            }
+            return arr1.join(' ')
+        }
+        console.log(a("hello how are you"))
+
+        function s(text){
+            let ac = ' '
+            for(i=text.length-1;i>=0;i--){
+                ac += text[i]
+            }
+            return ac
+        }
+        console.log(s("Rahul"))
+
+        let age1 = 15
+        if(age1>=10 && age1<=20){
+            console.log("Your age is lies between 10 and 20")
+        }
+        else{
+            console.log("Not")
+        }
+        let az = "43"
+        az = Number.parseInt(az)
+        console.log(typeof(az))
+
+        let age = 9
+        age = Number.parseInt(age)
+        if(age<0){
+            console.log("You cannot go to club")
+        }
+        else if(age>8 && age<15){
+            console.log("You can not even think to go to club")
+        }
+        else{
+            console.log("YOu can go to club")
+        }
+
+        let ac = 3
+        switch(ac){
+            case 1 :
+                console.log("a")
+                break;
+            case 2 : 
+                console.log("b")
+                break;
+            case 3 : 
+                console.log("c")
+                break;
+            case 4 : 
+                console.log("d")
+                break;
+            default:
+                console.log("wlejc")
+        }
+        let z = 10
+        for(i=0;i<10;i++){
+            console.log(i)
+        }
+        
+        let mean = (a,b,c,d,e)=>{
+            return (a+b+c+d+e)/5
+        }
+        // let a = 2
+        // let b = 1
+        // let c = 4
+        // let d = 5
+        console.log("Mean of five numbers is "+ mean(2,3,4,5,6))
+        </script>
+    </body>
+</html>

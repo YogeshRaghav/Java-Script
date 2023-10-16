@@ -1,0 +1,36 @@
+<html>
+    <head></head>
+    <body>
+        <!-- Object are similar to dictionaries in python -->
+        <script>
+            let currencyName={
+                USA : 'Dollar',
+                UK : 'EURO',
+                INDIA : 'Rupee',
+                INDIA : "RUPEES",
+                RUSSIA : "RUBEL"
+            }
+            // Two ways to access item of object menntioned below:-
+            console.log(currencyName.INDIA)
+            console.log(currencyName['UK'])
+            // currencyName.INDIA="Paisa"
+            // console.log(currencyName)
+
+            // For-in Loop
+
+            let obj ={
+                name : 'Yogesh',
+                class : 12 , 
+                Sub : "Maths"
+            }
+            for(a in obj){
+                console.log(a + ": " + obj[a])
+            }
+
+            for(b of "Yogesh"){
+                console.log(b + " : " + obj[b])
+            }
+
+        </script>
+    </body>
+</html>

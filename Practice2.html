@@ -1,0 +1,58 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let a = ("Yogesh Raghav")
+            let b = a.split(" ")
+            console.log(b)
+            let c = ("hello how are you")
+            console.log(c.slice(0,3))
+            console.log(c[0].toUpperCase() + c.slice(1))
+
+            function na(Txt){
+                let arr = Txt.split(' ')
+                let arr1 = []
+                for(let i=0;i<=arr.length - 1;i++){
+                    arr1.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1))
+                }
+                return arr1.join(' ')
+            }
+            console.log(na("hello am fine"))
+
+            let str = ('yOgEsH')
+            for(i=0;i<str.length;i++){
+                if(str.charAt(i)==str.charAt(i).toLowerCase()){
+                    console.log(str.charAt(i).toUpperCase())
+                }
+                else{
+                    console.log(str.charAt(i).toLowerCase())
+                }
+            }
+
+            let bv = [2,4,5,3]
+            let arr4 = bv.forEach(element => {
+                console.log(element*element) 
+            });
+            
+            console.log(document.body.firstChild)
+            console.log(document.body.lastChild)
+            console.log(document.body.ELEMENT_NODE)
+
+            let arr = [1,3,2,1]
+
+            // The map() method creates a new array by performing a function on each array element.
+
+            let arr1 = arr.map((val)=>{
+                console.log(val)
+                return val + 1
+            })
+            console.log(arr1)
+
+            let arr2 = [12,33,22,11]
+            let a2 = arr2.filter((a)=>{
+                return a<20
+            })
+            console.log(a2)
+        </script>
+    </body>
+</html>

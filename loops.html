@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+     /*
+
+      Loops
+     - For executing a block of code n number of times
+      - Iterating through a collection of data
+
+      1. Initialize the starting value
+      2. Condition
+      3. Increment/Decrement that value
+
+    */
+
+        // let i = 1
+        // while(i<=8){
+        //     console.log(i)
+        //     i++
+        // }
+        
+        let i = 7
+        do{
+            console.log(i)
+            i++
+        }
+        while(i>=10)
+
+        // for(let i=0;i<8;i++){
+        //     console.log(i)
+        // }
+
+        let arr = [2,4,6,7,3]
+        for(i of arr){
+            console.log(i)
+        }
+        /*
+        break - Skips further iterations
+        continue - Skips current iteration
+        */
+        // for-of -> To iterate through array elements -> Will not cause any change to original array
+        
+        const cars = ['bmw','audi','mercedes']
+        let a1 = ''
+        for(let i = 0; i<cars.length; i++){
+            a1 = cars[i]
+            console.log(a1)
+        }
+        // for in loop :- The JavaScript for in statement loops through the properties of an Object.
+        
+        const run = [22,4,2,67,4]
+        let text = " "
+        for(let x in run){
+            text = run[x] + " "
+            console.log(text)
+        }
+
+        // + operator is also used to append in java script
+        const t = ['Yo', 22, 'iue']
+        let a = " "
+        for(x in t){
+            a = t[x]
+            console.log(a)
+        }
+
+        let con = ["swift",'brezza','Vitara']
+        let con1 = ''
+        for(i=0;i<=con.length;i++){
+            con1 = con[i]
+            console.log(con1)
+        }
+        
+        for(let i=1;i<=10;i++){
+            if(i==4){
+                continue
+            }
+            console.log(i)
+        }
+
+        // for-of loops is used for array 
+
+        // let obj1 = {
+        //     harry : 12,
+        //     rahul : 22,
+        //     rohan : 23
+        // }
+        // for (let i=0;i<object.keys(obj1).length;i++){
+        //     console.log("marks of "+ object.keys(obj1)[i] + "is " + marks[object.keys(obj1)[i]])
+        // }
+        
+        // for(a in obj1){
+        //     console.log("Marks of " + a + " is " + obj1[a])
+        // }
+        
+
+        
+    </script>
+</body>
+</html>

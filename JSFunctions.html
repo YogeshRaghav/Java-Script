@@ -1,0 +1,125 @@
+<html>
+    <head></head>
+    <body>
+        <p>Functions can be invoked automatically without being called:</p>
+
+ 
+
+<p id="demo"></p>
+
+ 
+
+<script>
+(function () {
+  document.getElementById("demo").innerHTML = "Hello! I called myself";
+})();
+</script>
+        <script>
+            // function declaration
+            function abc(){
+                //// code 
+            }
+            //function calling/invoking
+            //abc()
+            function run(name,abc){
+                console.log(name);
+                let b = ''
+                for(i=0;i<=name.length;i++){
+                    b = name[i]
+                    console.log(b,"===i",i)
+                }
+            }
+            run("raghav")
+
+            // Task :- apple -> Apple
+                     // Apple -> Apple
+                    // APPLE -> APPLE
+            
+
+            function fruit(name){
+                name = name[0].toUpperCase() + name.slice(1)
+                return name
+            }
+            let name = fruit("apple")
+            console.log(name)
+
+            // Anonymus Function
+            
+            let test = function(){
+                // Code
+            }
+            test()
+
+            // arrowFunction
+            
+            let arrowFunction = () => {
+                // code
+            }
+            arrowFunction()
+
+            function sum(){
+                let a = 3
+                let b = 5
+                let sum1 = a + b 
+                console.log(sum1)
+            }
+            sum()
+
+            let div = function(){
+                var a = 8 
+                var b = 2
+                var res = a/b
+                console.log(res)
+            }
+            div()
+
+            function cars(carname){
+                carname = carname[0].toUpperCase() + carname.slice(1)
+                return carname
+            }
+            let carname = cars("swift")
+            console.log(carname)
+
+            function sun(name){
+                console.log(name)
+                let abc = ''
+                for(i=0;i<=name.length;i++){
+                    abc=name[i]
+                    console.log(abc)
+                }
+            }
+            sun('Raghav')
+            let abcd=[1,23,4,'abc','webcjhwe']
+            console.log(typeof(abcd))
+
+            function au(name){
+                console.log(name.toUpperCase())
+                // return name
+            }
+            au("yogesh")
+
+            function abc(name){
+                name = name[0].toUpperCase() + name.slice(1)
+                return name
+            }
+            let name1 = abc("hello")
+            console.log(name1)
+
+            let re = "Yogesh"
+            let re2 = " Raghav"
+            let re3 = re.concat(re2)
+            console.log(re3)
+
+            function average(x,y){
+                return 1 + (x+y)/2
+                
+            }
+            let a = 2
+            let b = 4
+            let c = 3
+            console.log("one pluas average a and b", average(a,b))
+            console.log("one pluas average a and c", average(a,c))
+            console.log("one pluas average c and b ", average(c,b))
+        </script>
+    </body>
+</html>

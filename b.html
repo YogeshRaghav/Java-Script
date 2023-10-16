@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <style>
+            .bulb{
+                height: 400px;
+                width: 400px;
+                background-color: yellow;
+            }
+            .bulb-container{
+                height: 400px;
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <button id = "b">Click</button>
+        <button onclick="alert('Hello')">Click on me</button>
+        <button onclick="alert('How')">HM</button>
+        <button onclick="alert('Hey')">P</button>
+        <button onclick="executeOrder(() => {
+            console.log('Order Received by Zomato Girl');
+        })"> Pizza Order</button>
+
+        <!-- <button >Google</button> -->
+        <!-- <a href="https://www.google.com/"><button id="Run">Google</button></a> -->
+        <button id="Run">Google</button></a>
+        <button id="Run1">Make My Trip</button></a>
+        <!-- make sure always write in single quote in parenthesis in onclick -->
+        
+        <script src="IntroToCallbacks.js"></script>
+        <script src="SetInterval&Timeout.js"></script>
+        <!-- <script src="BrowserEvents.js"></script> -->
+        <script src="Promise.js"></script>
+        
+
+        <div id="bulb" class="bulb bulb-container">
+
+        </div>
+    </body>
+</html>

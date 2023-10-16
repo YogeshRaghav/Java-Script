@@ -1,0 +1,138 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            // Methods
+                // toUpperCase()
+                // console.log(y.toUpperCase())
+
+                // // toLowerCase()
+                // console.log(y.toLowerCase())
+
+                // indexOf() - Returns 'first' index for that substring from the string, else return -1
+                // console.log(y.indexOf('+'))
+
+                // // lastIndexOf() - Returns 'last' index for that substring from the string, else return -1
+                // console.log(y.lastIndexOf('+'))
+
+                // console.log(y.indexOf('S', 6))
+
+                // includes() - Returns true if substring is present, else returns false
+
+                // console.log(y.includes('Bootstrap'))
+
+                // startsWith()
+                // console.log(y.startsWith('HTML'))
+
+                // endsWith()
+                // console.log(y.endsWith('S'))
+
+                // Access character at given index in string
+                // 1. console.log(y[4])
+
+                // 2. charAt()
+                // console.log(y.charAt(4))
+
+                // charCodeAt() - ASCII Value
+                // console.log(y.charCodeAt(4))
+
+                // replace() - First parameter is to match substring, second parameter is replace value [Note: It will only replace the first occurrence, will not cause change in the original string] 
+                // console.log(y.replace('JavaScript', 'HTML'))
+
+                // console.log(y.replace('S', 'T'))
+                // console.log(y.replace('S', ''))
+
+                // replaceAll() 
+                // console.log(y.replaceAll('S', 'T'))
+
+                // let z = y.replaceAll('S', '')
+                // console.log(z)
+
+                // /js/gi [g -> global, i -> Case Insensitive]
+
+                // .match() -> Returns all matched occurences
+                // console.log(y.match(/S/gi))
+
+                // // .search() -> Returns the count for all matched occurences
+                // console.log(y.search(/S/gi))
+
+                // .concat() -> This will cause no change in the original string [Can only be done using the '+' operator]
+                // let z = " + Bootstrap"
+                // // let a = y.concat(z)
+                // console.log(y + z)
+
+                // .slice(start, end) -> Characters will be returned from the starting index up till the (ending index - 1)
+                // console.log(y.slice(0, 6))
+
+                // console.log(y.slice(0, -1))
+
+                let cv = "Hello i am here"
+                let cb = cv.search("am")
+                console.log(cb)
+            
+                let x = "Do you want to run run"
+                    // let length = x.length
+                // let part = x.slice(2, 8)
+                // let upper = x.toUpperCase();
+                let change = x.replaceAll("run", "Eat")
+                
+                // let lower = x.toLowerCase()
+                let pos = change.charAt(5)
+                console.log(pos)
+
+                let str = "I want to learn"
+                let s = str.includes("to")
+                console.log(s)
+
+                // Important
+                let str1 = "I want to Eat"
+                if(str1.includes("Eat")){
+                    console.log("Yes you can eat")
+                }else{
+                    console.log("No you can't")
+                }
+
+                let ab = "hey you there"
+                let p = ab.indexOf("you")
+                console.log(p)
+
+                let str2 = "Hey are you there"
+                if(str2.includes("yo")){
+                    console.log('yes')
+                }
+            
+                let con = "are you Okk"
+                console.log(con.toUpperCase())
+                console.log(con.toLowerCase())
+                console.log(con.replace('Okk','Fine'))
+                if(con.includes("you")){
+                    console.log("Yes I am fine")
+                }
+                else{
+                    console.log("No")
+                }
+                console.log(con.charAt(2))
+
+                // Template Literals use back ticks (``) instead of stringg ("")
+                let boy1 = 'Raghav is a good boy'
+                let boy2 = 'Rahul'
+                let sen = `${boy1} is a friend of ${boy2}
+                ok`
+                console.log(sen)
+                if(boy1.includes("is")){
+                    console.log("hey")
+                }
+                console.log(boy2.replace("Ra","Pa"))
+                console.log(boy2.toLowerCase())
+
+                let name = "   Rajat"
+                console.log(name[6])
+                console.log(name.trim())
+                let cs = ''
+                for(i=0;i<=name.length;i++){
+                    cs = name[i]
+                    console.log(cs)
+                }
+        </script>
+    </body>
+</html>
